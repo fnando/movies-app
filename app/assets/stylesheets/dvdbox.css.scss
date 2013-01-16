@@ -1,0 +1,24 @@
+.dvdbox:after {
+  background: image-url("dvdbox.png") no-repeat;
+  content: "";
+  display: block;
+  height: 290px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 235px;
+  z-index: 300;
+}
+
+.dvdbox {
+  display: inline-block;
+  padding: 14px 0 0 39px;
+  position: relative;
+  z-index: 200;
+}
+
+.dvdbox .poster {
+  border-radius: 8px;
+  height: 255px;
+  width: 178px;
+}

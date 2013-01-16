@@ -1,0 +1,19 @@
+<article class="movie">
+  <h1><%= @movie.title %></h1>
+  <time datetime="<%= @movie.release_year %>"><%= @movie.release_year %></time>
+  <p class="summary"><%= @movie.summary %></p>
+  <%= link_to image_tag(@movie.poster_url, :class => "poster"),
+      movie_path(@movie), :class => "dvdbox"
+    %>
+
+  <ul class="actions">
+    <li>
+      <%= link_to "Edit", edit_movie_path(@movie) %>
+    </li>
+
+    <li>
+      <%= link_to "Remove", remove_movie_path(@movie) %>
+    </li>
+  </ul>
+</article>
+

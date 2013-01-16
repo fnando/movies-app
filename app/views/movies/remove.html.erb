@@ -1,0 +1,13 @@
+<%= form_tag movie_path(@movie), :method => :delete do %>
+  <h1>Remove movie</h1>
+
+  <p>
+    Are you sure you want to remove <strong><%= @movie.title %></strong>?
+    Be aware that there's no going back.
+  </p>
+
+  <p class="submit">
+    <%= submit_tag "Yes, remove it!" %>
+    <%= link_to "I changed my mind", movie_path(@movie) %>
+  </p>
+<% end %>

@@ -1,0 +1,89 @@
+$width: 700px;
+
+input[type=text],
+input[type=url],
+textarea {
+  background: #57545C;
+  background: rgba(#fff, .3);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  color: rgba(#fff, .6);
+  font-size: 24px;
+  outline-color: #f90;
+  padding: 10px 15px;
+  resize: none;
+  width: $width - 30px;
+}
+
+input[type=submit] {
+  background: #f90;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+  padding: 5px 10px;
+}
+
+input[type=submit] + a {
+  color: #fff;
+  color: rgba(#fff, .6);
+}
+
+textarea {
+  height: 200px;
+}
+
+label {
+  display: block;
+  padding-bottom: 5px;
+}
+
+form p + p {
+  margin-top: 40px;
+}
+
+form {
+  margin: 0 auto;
+  width: $width;
+}
+
+#movie_release_year {
+  text-align: center;
+  width: 100px;
+}
+
+.submit {
+  border-top: 1px solid #fff;
+  border-top-color: rgba(#fff, .3);
+  padding-top: 15px;
+}
+
+.field_with_errors {
+  display: inline;
+}
+
+.form-errors {
+  margin: 0 auto 50px auto;
+  width: $width;
+}
+
+.form-errors ul {
+  margin: 30px 0 0 30px;
+}
+
+.form-errors p {
+  font-weight: bold;
+}
+
+input[type="file"] {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 0;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  line-height: 24px;
+}

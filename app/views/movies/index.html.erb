@@ -1,0 +1,7 @@
+<% if @movies.empty? %>
+  <%= render "no_movies" %>
+<% else %>
+  <ul class="list">
+    <%= render @movies %>
+  </ul>
+<% end %>

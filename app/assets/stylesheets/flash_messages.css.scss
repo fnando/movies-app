@@ -1,0 +1,20 @@
+.message {
+  border-radius: 4px;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 15px 20px 15px 60px;
+}
+
+.message.notice {
+  background: #81ca6c image-url("notice.png") no-repeat 20px center;
+  color: #000;
+  color: rgba(0, 0, 0, .6);
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, .5);
+}
+
+.message.alert {
+  background: #cb4617 image-url("alert.png") no-repeat 20px center;
+  color: #000;
+  color: rgba(255, 255, 255, .9);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+}

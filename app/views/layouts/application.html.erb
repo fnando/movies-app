@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>MOVIES</title>
+
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body class="page">
+    <header class="main-header">
+      <h1>
+        <%= link_to "Movies", root_path, :class => "logo" %>
+      </h1>
+
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <%= link_to "Add a movie", new_movie_path, :class => "add-movie" %>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <%= render "shared/flash_messages" %>
+
+    <div class="content">
+      <section class="main">
+        <%= yield %>
+      </section>
+    </div>
+  </body>
+</html>

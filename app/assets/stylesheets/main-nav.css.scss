@@ -1,0 +1,21 @@
+.main-nav {
+  position: absolute;
+  right: 10px;
+  top: -3px;
+}
+
+.main-nav ul {
+  list-style: none;
+}
+
+.add-movie {
+  background: #f90;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  padding: 0 10px;
+  text-decoration: none;
+}

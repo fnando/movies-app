@@ -1,0 +1,25 @@
+<%= form_for movie do |f| %>
+  <p>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :summary %>
+    <%= f.text_area :summary %>
+  </p>
+
+  <p>
+    <%= f.label :release_year %>
+    <%= f.text_field :release_year %>
+  </p>
+
+  <p>
+    <%= f.label :poster_url %>
+    <%= f.url_field :poster_url %>
+  </p>
+
+  <p class="submit">
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,41 @@
+.movie {
+  padding: 0 250px 0 0;
+  position: relative;
+}
+
+.movie h1 {
+  font-size: 50px;
+  display: inline;
+  margin-bottom: 10px;
+}
+
+.movie time {
+  color: #f90;
+  display: inline;
+  font-size: 50px;
+}
+
+.movie .summary {
+  line-height: 1.5;
+}
+
+.movie .dvdbox {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.movie .actions {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.movie .actions a {
+  color: rgba(#fff, .6);
+  font-size: 18px;
+}
+
+.movie .actions li {
+  float: left;
+  margin-right: 15px;
+}
