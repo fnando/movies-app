@@ -1,3 +1,6 @@
+Bootstrap app:
 
-    $ rails new movies
-    $ rm public/index.html
+    $ bundle install
+    $ rake db:migrate
+    $ HOST=localhost:3000 rake db:seed
+    $ rails s
