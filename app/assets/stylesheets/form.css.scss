@@ -1,4 +1,4 @@
-$width: 700px;
+$width: 960px;
 
 input[type=text],
 input[type=url],
@@ -68,6 +68,14 @@ form {
 .form-errors {
   margin: 0 auto 50px auto;
   width: $width;
+}
+
+h1 + .form-errors {
+  margin-top: 20px;
+}
+
+h1 + form {
+  margin-top: 50px;
 }
 
 .form-errors ul {
